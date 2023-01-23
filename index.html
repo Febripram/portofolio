@@ -107,7 +107,7 @@
     </section>
     <section id="contact" class="contact container">
         <div class="row">
-            <div class="col">
+            <div class="col d-flex align-items-center justify-content-center flex-column">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque, nam officiis iure dolore
                     aut sunt quas veritatis praesentium nisi!</p>
                 <div class="row d-flex align-items-center">
@@ -126,21 +126,21 @@
                 </div>
             </div>
             <div class="col">
-                <form class="contact-form">
+                <form class="contact-form" onsubmit="onFormSubmit(event)">
                     <div class="mb-3">
                         <label for="inp_email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="inp_email" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="inp_email" aria-describedby="emailHelp" placeholder="example@gmail.com">
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
                         <label for="inp_subject" class="form-label">Subject</label>
-                        <input type="text" class="form-control" id="inp_subject">
+                        <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject">
                     </div>
                     <div class="mb-3">
                         <label for="inp_message" class="form-label">Message</label>
-                        <input type="text" class="form-control" id="inp_message">
+                        <input type="text" class="form-control" id="inp_message" placeholder="Your Message">
                     </div>
-                    <div class="d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center justify-content-center mt-2">
                         <button type="submit" class="btn button">Submit</button>
                     </div>
                 </form>
